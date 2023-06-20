@@ -5,7 +5,6 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
-  font-family: "Source Sans Pro", sans-serif;
   background-color: #f3f3f3;
   -webkit-font-smoothing: antialiased;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
@@ -21,6 +20,7 @@ body {
 .navbar {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
+  z-index: 99999 !important;
 }
 .nav-link {
   font-family: "Inter", sans-serif !important;
@@ -37,18 +37,22 @@ body {
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 1.2rem;
     padding-left: 1.1rem;
+    z-index: 99999 !important;
   }
 }
 
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-collapse {
     padding-left: 5% !important;
+    z-index: 99999 !important;
   }
 }
 .bs-banner {
   width: 100% !important;
-  height: 48rem;
+  height: 36rem;
   z-index: 0;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
   position: relative;
 }
 .div-img {
@@ -64,12 +68,12 @@ body {
 .banner-text {
   font-family: "Itim", cursive;
   color: white;
-  font-weight: bold;
+  font-weight: bolder;
 }
 .banner-text2 {
   font-family: "Itim", cursive;
   color: white;
-  font-weight: normal;
+  font-weight: bold;
 }
 .btn-bs {
   background-color: #ff9736;
@@ -82,7 +86,6 @@ body {
   color: white;
   font-weight: bold;
   font-family: "Inter", sans-serif;
-  width: 20rem;
 }
 .section1 > .container,
 .section2 > .container,
@@ -93,14 +96,15 @@ body {
   align-items: center;
   height: max-content;
 }
-.section3 > .container {
-  height: 50rem;
-}
 
 .apropos {
   font-family: "Yatra One", sans-serif;
 }
-
+.restau-food {
+  border-radius: 1rem;
+  width: 26rem;
+  height: 13rem;
+}
 .card {
   border-radius: 1rem;
 }
@@ -118,7 +122,7 @@ body {
   font-size: 2rem;
   height: 100%;
 }
-.badge {
+.badge-menu {
   font-size: 3rem;
 }
 .menu {
@@ -126,12 +130,23 @@ body {
   flex-direction: column;
   align-items: center;
 }
+.menu-inline {
+  display: inline;
+}
 .vertical-line {
   border-left: 2px solid #584949;
   height: max-content;
 }
 .menu-item {
   font-size: 1.8rem;
+  list-style: none;
+  text-align: start;
+}
+.menu-price {
+  font-size: 1.4rem;
+  list-style: none;
+  font-weight: bolder;
+  margin-left: 4rem;
 }
 .bs-footer {
   background-color: #e4bc01;
@@ -179,7 +194,6 @@ body {
 .img_popup {
   height: 5rem;
   width: 7rem;
-  margin-left: 30%;
 }
 /* Contact  */
 .section-inner-headings .section-inner-title {
@@ -314,4 +328,9 @@ body {
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+}
+.banner-heading {
+  padding: 20px;
+  letter-spacing: 2px;
+  border-radius: 25px;
 }

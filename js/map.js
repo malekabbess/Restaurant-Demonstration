@@ -2,7 +2,7 @@ var map = L.map("mapid").setView([35.82231, 10.19238], 8);
 var marker = L.marker([35.82231, 10.19238]).addTo(map);
 marker
   .bindPopup(
-    '<img src="img/logo.png" alt="logo" class="img_popup" /><h6 class="eden">Restauration - DEMO</h6><p>Rue La Tunisie </p> '
+    '<img src="img/logo-bs.svg" alt="logo" class="img_popup" /><h6 class="eden">Restauration - DEMO</h6><p>Rue La Tunisie </p> '
   )
   .openPopup();
 
